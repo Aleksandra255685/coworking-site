@@ -1,0 +1,426 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;    
+    box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2); 
+}
+
+.nav a{
+    color: #000000;
+}
+
+.nav-row {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    padding-left: 100px;
+    width: 80%;
+    height: 80%;
+    transition: 0.35s;
+}
+.logo img:hover{
+    transform: scale(1.005);
+}
+
+.nav-list {
+	display: flex;
+    height: 100%;
+    margin-left: 540px;
+}
+
+.nav-list li{
+	display: flex;
+    padding: 2.4rem 0;
+    margin-right: 50px;
+    position: relative;
+    align-items: center;
+}
+
+.nav-list li a{
+    transition: 0.4s linear;
+}
+
+.nav-list li a:hover{
+    color: #28BE46;
+}
+
+.tpu-link{
+    height: 40px;
+    width: 150px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e9243;
+    border-radius: 5px;
+    transition: 0.4s linear;
+}
+
+.tpu-link:hover{
+    background-color: #28BE46;
+}
+
+.tpu-link a{
+    color: #ffffff;
+    font-weight: 700;
+}
+/*main page*/
+.section{
+    position: relative;
+    top: 100px;
+    padding-bottom: 200px;
+    width: 100%;
+    background-color: #f3f5f6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;    
+    align-content: center;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.1) inset;
+}
+.container{
+    width: 1000px;
+    height: 561px;
+    padding-top: 100px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.coworking-info{
+    height: 100%;
+    width: 75%;
+    background-image: url('../img/coworking.jpg');
+    color: #ffffff;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.coworking-info h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+}
+.coworking-info p{
+    padding-top: 30px;
+    line-height: 180%;
+}
+
+.coworking-list{
+    width: 45%;
+    background-color: #0e9243;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.coworking-list li a{
+    color: #ffffff;
+}
+
+.events{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/events.png');
+    color: #ffffff;
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+        
+.events h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+}
+
+.events-link{
+    height: 24px;
+    width: 150px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    box-shadow: 0 -15px 30px 0 rgba(0,0,0,0.2);
+    background-color: #1E1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_text{
+    color: #999999;
+    padding-right: 100px;
+    text-align: right;
+}
+
+.footer_logo{
+    padding-left: 100px;
+    width: 20%;
+    height: 30px;
+}
+
+/*Events page*/
+.container_events{
+    width: 1200px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.container_events h2{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    padding-bottom: 50px;
+    color: #000000;
+}
+
+.events-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 30px;
+}
+
+.event {
+	max-width: 370px;
+	background-color: #ffffff;
+    transition: 0.3s linear;
+}
+.event h3{
+    padding: 10px;
+    color: #000000;
+}
+
+.event p{
+    color: #b0b4b9;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.event:hover{
+    background-color: #000000;
+    
+}
+.event li h3:hover{
+    color: #ffffff;
+}
+/*Event page*/
+.container_event{
+    width: 1200px;
+    height: 590px;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_event img{
+    width: 45%;
+}
+.container_event h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.event_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event_link{
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e9243;
+    border-radius: 5px;
+    transition: 0.4s linear;
+}
+
+.event_link:hover{
+    background-color: #28BE46;
+}
+
+.event_link a{
+    color: #ffffff;
+    font-weight: 700;
+}
+.description{
+    padding-bottom: 70px;
+    text-align: justify;
+    line-height: 160%;
+}
+.venues, .time{
+    padding-bottom: 20px;
+    word-spacing: 15px;
+}
+
+/*Coworking page*/
+.container_coworking{
+    width: 1200px;
+    height: 550px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coworking{
+    height: 90%;
+    width: 560px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.coworking h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.timetable_link {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e9243;
+    border-radius: 5px;
+    transition: 0.4s linear;
+}
+.timetable_link:hover{
+    background-color: #28BE46;
+}
+
+.timetable_link a{
+    color: #ffffff;
+    font-weight: 700;
+}
+/*Timetable*/
+.container_timetable{
+    width: 1000px;
+    height: 600px;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frame{
+    width: 100%;
+    height: 500px;
+}
+.open {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e9243;
+    border-radius: 5px;
+    transition: 0.4s linear;
+    color: #ffffff;
+    font-weight: 700;
+}
+.open:hover{
+    background-color: #28BE46;
+}
+
+/*Pop up*/
+.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+}
+.popup{
+    background-color: #f3f5f6;
+    width: 500px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+}
+.close{
+    padding-left: 420px;
+}
+.tab_list{
+    padding-left: 100px;
+}
+.tabs{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.active-tabs  {
+    border-bottom: 3px solid #0e9243;
+}
+  
+
+  
+input, textarea, .form-select{
+    width: 100%;
+    border: 1px solid #b0b4b9;
+    border-radius: 5px; 
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input:focus, textarea:focus, .form-select:focus{
+    
+    border: 1px solid #28BE46;
+}
+.send{
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e9243;
+    border-radius: 5px;
+    transition: 0.4s linear;
+    color: #ffffff;
+    font-weight: 700;
+}
+.send:hover{
+    background-color: #28BE46;
+}
